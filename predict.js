@@ -13,7 +13,7 @@ $("#image-selector").change(function () {
     $('#progress-bar').show();
     console.log("Loading model...");
     try{
-     model = await tf.loadLayersModel('https://github.com/zarina-0-0/dem_check/blob/main/jsdem1/model.json');
+     model = await tf.loadLayersModel('main/jsdem1/model.json');
       $('#progress-bar').hide();
       $('#image-selector-row').removeClass('d-none')
       $('#predict-button').removeClass('d-none').addClass('d-grid')
