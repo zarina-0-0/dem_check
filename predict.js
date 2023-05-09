@@ -13,7 +13,7 @@ $("#image-selector").change(function () {
     $('#progress-bar').show();
     console.log("Loading model...");
     try{
-     model = await tf.loadLayersModel('/jsdem1/model.json');
+     model = await tf.loadLayersModel('./jsdem1/model.json');
       $('#progress-bar').hide();
       $('#image-selector-row').removeClass('d-none')
       $('#predict-button').removeClass('d-none').addClass('d-grid')
