@@ -46,6 +46,6 @@ $("#image-selector").change(function () {
      .sort((a,b)=> (b.probability - a.probability));
    $("#prediction-list").empty();
     top5.forEach(function (p) {
-     $("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed(2)*100}%</li>`);
+     $("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed()*100}%</li>`);
     });
    });
