@@ -24,7 +24,7 @@ $("#image-selector").change(function () {
     console.log("Model loaded.");
    });
    $("#predict-button").click(async function () {
-    const classes = ['None','Frontotemporal dementia','Lewy body dementia','Alzheimer', 'Vascular demetia']
+    const classes = ['Alzheimer','Frontotemporal dementia','Lewy body dementia','None', 'Vascular demetia']
     TARGET_CLASSES = Object.assign({}, classes);
     let image = $('#selected-image').get(0);
     console.log(image)
